@@ -1,7 +1,7 @@
 // Note: You HAVE to specify that this
 // class is a part of this package, or
 // it will not compile. This package mirrors
-// the directory structure on the machine,
+// this project's directory structure,
 // so if the subdirectories in src/ were to 
 // change, so would this package name.
 package com.greyhounds;
@@ -17,9 +17,10 @@ public class Point {
         
         // This is a constructor, which always has
         // the same name as the encapsulating class, and
-        // is always public.
-        // The constructor can
+        // is usually public.
         public Point(int x, int y) {
+                // "this" is an object reference
+                // to the current object being constructed
                 this.x = x;
                 this.y = y;
         }
