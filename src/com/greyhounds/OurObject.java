@@ -13,6 +13,9 @@ public class OurObject extends Object {
                 // as the object being cloned, and returns it.
         }
         
+		// Notice, because the method of the superclass
+		// takes an argument, our overriding method has to
+		// pass it the argument inside the call "super()"
         @Override
         boolean equals(Object object) {
                 super(object);
