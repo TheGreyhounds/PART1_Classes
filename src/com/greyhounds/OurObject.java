@@ -2,13 +2,13 @@ package com.greyhounds;
 
 public class OurObject extends Object {
         
-        public OutObject() {
+        public OurObject() {
                 super();
         }
         
         @Override
-        protected Object clone() {
-                super();
+        protected Object clone() throws CloneNotSupportedException {
+                return super.clone();
                 // Creates a new object that is the same
                 // as the object being cloned, and returns it.
         }
@@ -17,54 +17,28 @@ public class OurObject extends Object {
 		// takes an argument, our overriding method has to
 		// pass it the argument inside the call "super()"
         @Override
-        boolean equals(Object object) {
-                super(object);
+        public boolean equals(Object object) {
+                return super.equals(object);
                 // Determines whether one object is equal to another.
         }
         
         @Override
-        void finalize() {
-                super();
+        protected void finalize() throws Throwable {
+                super.finalize();
                 // Code here is run right before
                 // an unused object is garbage-collected.
         }
         
         @Override
-        Class<OurObject> getClass() {
-                super();
-               // Obtains the class of an object at run time.
-        }
-        
-        @Override
-        int hashCode() {
-                super();
+        public int hashCode() {
+                return super.hashCode();
                 // Returns the hash code associated
                 // with the invoking object.
         }
         
         @Override
-        void notify() {
-                super();
-                // Resumes execution of a thread waiting
-                // on the invoking object.
-        }
-        
-        @Override
-        void notifyAll() {
-                super();
-                // Resumes execution of all threads waiting
-                // on the invoking object.
-        }
-        
-        @Override
-        String toString() {
-                super();
+        public String toString() {
+                return super.toString();
                 // Returns a String that describes the object.
-        }
-        
-        @Override
-        void wait() {
-                super();
-                // Waits on another thread of execution.
         }
 }
